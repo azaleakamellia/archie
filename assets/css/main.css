@@ -1,7 +1,7 @@
 /* Markdown */
 :root{
 --maincolor: red;
---bordercl:rebeccapurple;
+--bordercl:red;
 --callouctcolor:dodgerblue;
 --hovercolor:navy;
 --darkMaincolor: #50fa7b;
@@ -58,7 +58,7 @@ ul {
   padding-left: 2ch;
 }
 ul li {
-  text-indent: -2ch;
+  text-indent: -0ch;
 }
 ul > li::before {
   content: '* ';
@@ -138,15 +138,27 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1em 0;
-  line-height: 2.5em;
+  line-height: 1em 0;
 }
 
 header .main {
   font-size: 1.5rem;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2em;
+}
+
+h2 {
   font-size: 1.2rem;
   margin-top: 2em;
+}
+
+
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  margin-top: 1.2em;
 }
 
 h1::before { color: var(--maincolor); content: '# '; }
@@ -172,12 +184,10 @@ footer {
 .soc {
   display: flex;
   align-items: center;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 2px solid;
   border-bottom: none;
-}
-.border {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  border: 1px solid;
 }
 .footer-info {
   padding: var(--footer-padding);
