@@ -149,6 +149,7 @@ header .main {
 h1 {
   font-size: 1.25rem;
   margin-top: 2em;
+  margin-bottom: .25em;
 }
 
 h2 {
