@@ -97,6 +97,13 @@ figure h4::before {
   content: '↳ ';
 }
 
+/* Videos */
+.video-shortcode {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* Code blocks */
 code {
   background-color: #f1f1f1;
